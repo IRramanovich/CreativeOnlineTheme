@@ -1,0 +1,234 @@
+header {
+    background-image: url(../assets/img/singleArticle3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 490px;
+}
+.fixedMenu {
+    max-width: 100%;
+
+}
+.fixedMenu .logo {
+    padding: 0px;
+    height: auto;
+}
+.fixedMenu .row {
+    max-width: 1140px;
+    margin: auto;
+}
+.articleInsideHeader {
+    width: 100%;
+    overflow: hidden;
+}
+.articleInsideHeader img {
+    width: 100%;
+}
+.articleInsideHeader .itemContent {
+    position: static;
+    top: 20px;
+    color: #000000;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 100px;
+}
+.articleInsideHeader .photoTags {
+    border: none;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+
+}
+.articleInsideHeader .itemTitle {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+.articleInsideHeader .itemTitle span {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'MerriweatherRegular';
+    line-height: 27px;
+}
+.articleInsideHeader .middleRow {
+    left: calc(50% - 20px);
+    max-width: 266px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.articleInsideHeader .middleRow div {
+    display: inline-block;
+}
+.articleInsideHeader .itemLabel {
+    width: 30px;
+}
+.articleInsideHeader .itemTags {
+    width: 60px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.articleInsideHeader .itemTags span {
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 5px;
+    color: #4eb700;
+}
+.articleInsideHeader .itemViews {
+    width: 50px;
+    margin: auto;
+    text-align: right;
+    color: #bbbbbb;
+    background-image: url(../assets/img/icon/eye.png);
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    background-size: 12px;
+}
+.articleInsideHeader .itemViews span {
+    font-size: 12px;
+    font-weight: bold;
+}
+.articleInsideHeader .itemDate {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #4eb700;
+}
+.articleInsideHeader .itemDescription {
+    width: 494px;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'MerriweatherRegular';
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.articleInsideHeader .itemDescription span {
+    width: 212px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.subMenu {
+    color: #ffffff;
+}
+.weather span {
+    color: #ffffff;
+}
+.exchangeRate span {
+    color: #ffffff;
+}
+.exchangeRate span span {
+    color: #ffffff;
+}
+.subMenuRight span {
+    color: #ffffff;
+}
+.itemDate.mobile {
+    display: none;
+}
+@media (max-width: 992px) {
+    header {
+        background-image: url(../assets/img/singleArticle3m.png);
+        min-height: 1500px;
+    }
+    .itemDate.mobile {
+        display: block;
+        text-align: center;
+        margin-bottom: 650px;
+    }
+    .itemDate.mobile span {
+        color: #ffffff;
+        font-size: 25px;
+    }
+    .articleInsideHeader {}
+    .articleInsideHeader .itemContent {
+        margin-top: 0px;
+    }
+    .articleInsideHeader .itemTitle {
+        width: 90%;
+    }
+    .articleInsideHeader .itemTitle span {
+        font-size: 70px;
+        line-height: 30px;
+    }
+    .articleInsideHeader .middleRow {
+        max-width: 100%;
+        text-align: center;
+        position: absolute;
+        left: calc(50% - 160px);
+        bottom: 350px;
+    }
+    .articleInsideHeader .middleRow .itemLabel {
+        width: 50px;
+    }
+    .articleInsideHeader .middleRow .itemTags {
+        width: 150px;
+        vertical-align: middle;
+    }
+    .articleInsideHeader .middleRow .itemTags span {
+        font-size: 30px;
+    }
+    .articleInsideHeader .middleRow .itemViews {
+        width: 110px;
+        vertical-align: middle;
+        background-position: 2px 13px;
+        background-size: 34px;
+    }
+    .articleInsideHeader .middleRow .itemViews span {
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .articleInsideHeader .middleRow .itemDate {
+        display: none !important;
+    }
+    .articleInsideHeader .itemDescription {
+        width: 90%;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .articleInsideHeader .photoTags {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+.articleInsideHeader .itemContent {
+    position: relative;
+    top: 20px;
+    color: #000000;
+    width: 100%;
+}
+.articleInsideHeader .middleRow {
+    left: calc(50% - 20px);
+    max-width: 266px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.articleInsideHeader .middleRow div {
+    display: inline-block;
+}
+.articleInsideHeader .itemLabel {
+    width: 30px;
+}
+.articleInsideHeader .itemDate {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #4eb700;
+}
+.articleInsideHeader .itemTags {
+    width: 60px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.articleInsideHeader .itemTags span {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 5px;
+    color: #4eb700;
+}
+.articleInsideHeader .itemTitle {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px
+}
+.articleInsideHeader .itemTitle span{
+    font-size: 34px;
+    text-align: center;
+    font-family: 'MerriweatherRegular';
+    line-height: 27px;
+}
+.articleInsideHeader .itemDescription span {
+    width: 212px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.articleInsideHeader .itemDescription {
+    width: 494px;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'MerriweatherRegular';
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.articleInsideHeader .itemViews {
+    width: 50px;
+    margin: auto;
+    text-align: right;
+    color: #bbbbbb;
+    background-image: url(../assets/img/icon/eye.png);
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    background-size: 12px;
+}
+.articleInsideHeader .itemViews span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .articleInsideHeader .itemTitle {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .articleInsideHeader .itemTitle span {
+        font-size: 65px;
+    }
+    .articleInsideHeader .itemDescription {
+        width: 90%;
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 100px;
+    }
+    .articleInsideHeader .itemDescription span {}
+    .articleInsideHeader .middleRow {
+        max-width: 400px;
+        position: absolute;
+        top: 330px;
+        left: calc(50% - 150px);
+    }
+    .articleInsideHeader .middleRow .itemLabel {
+        width: 50px;
+    }
+    .articleInsideHeader .middleRow .itemTags {
+        width: 120px;
+    }
+    .articleInsideHeader .middleRow .itemTags span{
+        font-size: 25px;
+        vertical-align: middle;
+    }
+    .articleInsideHeader .middleRow .itemViews {
+        width: 120px;
+        background-size: 37px;
+    }
+    .articleInsideHeader .middleRow .itemViews span {
+        font-size: 30px;
+        vertical-align: middle;
+        color: #bbbbbb;
+    }
+    .articleInsideHeader .middleRow .itemDate {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

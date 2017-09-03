@@ -1,0 +1,101 @@
+.popupSubscribe {}
+.popupSubscribeContent {
+    margin-top: 25%;
+}
+.mainPopupSubscribe {
+    width: 900px;
+}
+.popupSubscribeTitle {
+    font-family: 'ProximaNovaBold';
+    font-size: 38px;
+}
+.popupSubscribeTitle span {}
+.popupSubscribeMessage {
+    font-size: 18px;
+}
+.popupSubscribeMessage span {}
+.newsItemConatainer {
+    margin-top: 20px;
+    width: 320px;
+    margin: auto;
+    background-color: #fefefe;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+.newsItem {
+    overflow: hidden;
+}
+.newsItem div {
+
+}
+.newsItemContent {
+    width: 90%;
+    float: left;
+}
+.newsItemContent {
+
+}
+.newsItemHeader {
+    text-align: left;
+    font-family: 'ProximaNovaBold';
+    padding-left: 13px;
+    margin: 5px 0;
+}
+.newsItemHeader span {}
+.newsItemBody {
+    margin-bottom: 5px;
+}
+.newsItemBody div{
+    display: inline-block;
+}
+.newsItemImage {
+    width: 30%;
+    float: left;
+    margin-left: 3px;
+}
+.newsItemImage img {}
+.newsItemTextContainer {
+    width: 67%;
+}
+.newsItemMainText {
+    text-align: left;
+    line-height: 16px;
+    font-size: 13.8px;
+}
+.newsItemMainText span {}
+.newsItemFooterText {
+    display: block !important;
+    text-align: left;
+    margin-top: 7px;
+    color: #989898;
+    font-size: 12px;
+}
+.newsItemFooterText span {}
+.newsItemControls {
+    width: 8%;
+    float: right;
+}
+.newsItemCloseButton {}
+.newsItemSettingsButton {
+    margin-top: 68px;
+}
+.subscribePopupButtonContainer {
+    margin-top: 25px;
+}
+.subscribePopupButton {
+    width: 219px;
+    margin: auto;
+    height: 50px;
+    background-color: #14ab00;
+    border-radius: 5px;
+    color: #ffffff;
+    vertical-align: middle;
+    font-size: 17px;
+}
+.subscribePopupButton span {
+    margin-top: 12px;
+    display: inline-block;
+    font-family: 'ProximaNovaBold';
+}
+.popupSubscribeLink {}
+.popupSubscribeLink span {}

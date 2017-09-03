@@ -1,0 +1,9 @@
+@import "main.css";
+@import "adaptive/style_minwidth_992px.css";
+@import "adaptive/style_minwidth_576.css";
+
+html {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+}

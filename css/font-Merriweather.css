@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'MerriweatherRegular';
+    src: url('../assets/fonts/MerriweatherRegular/MerriweatherRegular.eot');
+    src: url('../assets/fonts/MerriweatherRegular/MerriweatherRegular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MerriweatherRegular/MerriweatherRegular.woff') format('woff'),
+    url('../assets/fonts/MerriweatherRegular/MerriweatherRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MerriweatherLight';
+    src: url('../assets/fonts/MerriweatherLight/MerriweatherLight.eot');
+    src: url('../assets/fonts/MerriweatherLight/MerriweatherLight.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MerriweatherLight/MerriweatherLight.woff') format('woff'),
+    url('../assets/fonts/MerriweatherLight/MerriweatherLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MerriweatherBold';
+    src: url('../assets/fonts/MerriweatherBold/MerriweatherBold.eot');
+    src: url('../assets/fonts/MerriweatherBold/MerriweatherBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MerriweatherBold/MerriweatherBold.woff') format('woff'),
+    url('../assets/fonts/MerriweatherBold/MerriweatherBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

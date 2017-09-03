@@ -1,0 +1,62 @@
+.aboutProjectHeader {
+    margin-bottom: 70px;
+}
+.mainContentProject {
+    padding-top: 50px;
+    margin-top: 0px;
+}
+.contact {}
+.contactContainer {}
+.contactContentContainer {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+.contactContentItem {
+    float: left;
+    width: 20%;
+}
+.contactContentItem:first-child {
+    width: 33%;
+}
+.contactContentItem:last-child {
+    margin-left: 40px;
+}
+.contactsLogoImg {}
+.contactsLogoImg img {}
+.contactContentItem {}
+.contactContentItem div {
+    text-align: left;
+}
+.contactContentItemHeader {
+    width: 180px;
+    font-family: 'ProximaNovaBold';
+    text-transform: uppercase;
+    color: #4eb700;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.contactContentItemHeader span {}
+.contactContentItemMail {}
+.contactContentItemMail span {}
+.contactContentItemPhone {}
+.contactContentItemPhone span {
+    display: block;
+}
+.contactVotermark {
+    margin-top: 150px;
+    font-family: 'ProximaNovaBold';
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 25px;
+}
+.contactVotermark span {
+    display: block;
+}
+.aboutProjectTags {
+    margin-top: 0;
+    color: #ffffff;
+}
+.aboutProjectTags span {}
+
