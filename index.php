@@ -62,40 +62,37 @@
     <!-- start main container -->
     <div class="container mainContent" >
         <!-- start first row -->
+        <?php
+        $query = new WP_Query( 'post_type=post' );
+
+        $article_items = [];
+        $item_price_place = array(
+            'dig_image' => 1,
+            'middle_image' =>  1,
+            'small_image' => 2
+        );
+
+        foreach( $query->posts as $post){
+            $row = [];
+            $count_item_in_row = 0;
+
+            $post_type = get_the_terms($post->ID, 'preview_type');
+            $current_occupied_place = $count_item_in_row + $item_price_place[$post_type];
+
+            if ($current_occupied_place < 4) {
+                $row[] = $post;
+                $count_item_in_row = $current_occupied_place;
+            } elseif ($current_occupied_place == 4) {
+                $row[] = $post;
+            } elseif ($current_occupied_place > 4) {
+                
+            }
+        }
+        wp_reset_postdata();
+        ?>
 
         <div class="row">
             <?php
-            $query = new WP_Query( 'post_type=post' );
-
-            $article_items = [];
-
-            foreach( $query->posts as $post){
-                $row = [];
-                $count_item_in_row = 0;
-
-                $post_type = get_the_trems($post->ID, 'preview_type');
-
-                switch ($post_type->slug) {
-                    case 'dig_image':
-                        $count_item_in_row += 2;
-                        break;
-                    case 'middle_image':
-                        $count_item_in_row += 1;
-                        break;
-                    case 'small_image':
-                        $count_item_in_row += 1;
-                        break;
-                }
-
-                if ($count_item_in_row < 4) {
-                    $row[] = $post;
-                } elseif ($count_item_in_row == 4) {
-
-                } elseif ($count_item_in_row > 4) {
-
-                }
-            }
-            wp_reset_postdata();
             while ( $query->have_posts() ) {
                 $query->the_post();
                 $post_id = get_the_ID();
