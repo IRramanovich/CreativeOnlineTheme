@@ -1,4 +1,11 @@
 <?php
+//глобальные переменные
+global $item_price_place;
+$item_price_place = array(
+    'dig_image' => 2,
+    'middle_image' =>  1,
+    'small_image' => 1
+);
 // подключаем стили и скрипты
 function creative_theme_style() {
     wp_register_style(
@@ -68,12 +75,14 @@ function creative_theme_style() {
 
 function creative_theme_script() {
     wp_register_script(
-        'jquery',
+        'jquery_my',
         get_template_directory_uri() . '/skripts/jquery-3.2.1.js',
         null,
         '3.2.1',
         true
     );
+
+    wp_enqueue_script('jquery_my');
 }
 
 add_action('wp_enqueue_scripts', 'creative_theme_style');
@@ -123,7 +132,47 @@ function add_new_taxonomi() {
 
 add_action('init', 'add_new_taxonomi', 0);
 
-//
+//Функция сортировки постов по строкам для выводв
+function place_preview_sort() {
+    $query = new WP_Query( 'post_type=post' );
+    $article_items = [];
+
+    $item_place_map = [3, 4, 3, 4, 4];
+
+    foreach($item_place_map as $item_plase){
+
+        $row = [];
+        $count_item_in_row = 0;
+        $deferred_posts = [];
+        while (($count_item_in_row < $item_plase) && (count($query->posts) > 0)) {
+            $post = array_shift($query->posts);
+            $post_type = get_the_terms($post->ID, 'preview_type');
+            $current_occupied_place = $count_item_in_row + $GLOBALS['item_price_place'][$post_type[0]->slug];
+
+            if ($current_occupied_place < $item_plase) {
+                $row[] = $post;
+                $count_item_in_row = $current_occupied_place;
+            } elseif ($current_occupied_place == $item_plase) {
+                $row[] = $post;
+                $count_item_in_row = $current_occupied_place;
+                $article_items[] = $row;
+                $row = [];
+                if (count($deferred_posts) > 0) {
+                    $query->post = array_merge($deferred_posts, $query->post);
+                    $deferred_posts = [];
+                }
+            } elseif ($current_occupied_place > $item_plase) {
+                $deferred_posts[] = $post;
+            }
+        }
+
+        if (count($row) > 0) {
+            $article_items[] = $row;
+        }
+    }
+
+    return $article_items;
+}
 
 
 

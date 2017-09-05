@@ -115,8 +115,7 @@
         </div>
     </div>
 </div>
-
-<script type="application/javascript" src="<?php bloginfo('template_directory'); ?> /skripts/jquery-3.2.1.js"></script>
+<?php wp_footer() ?>
 <script type="application/javascript">
     $(function(){
 
@@ -158,6 +157,5 @@
 
     });
 </script>
-<?php wp_footer() ?>
 </body>
 </html>
